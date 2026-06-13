@@ -41,9 +41,9 @@ export default function App() {
         <Catalogue products={products} source={source} t={t} language={language} />
         <ProductShowcase t={t} />
         <HowToOrder t={t} />
-        <Contact t={t} />
+        <Contact t={t} settings={settings} />
       </main>
-      <Footer t={t} />
+      <Footer t={t} settings={settings} />
       <FloatingWhatsApp t={t} />
     </div>
   );

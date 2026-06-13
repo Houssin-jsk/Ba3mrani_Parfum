@@ -81,6 +81,7 @@ const translations = {
       cta: "Commander maintenant",
       instagram: "Instagram",
       whatsapp: "WhatsApp",
+      facebook: "Facebook",
     },
     footer: {
       tagline: "L’élégance en chaque note.",
@@ -189,6 +190,7 @@ const translations = {
       cta: "اطلب الآن",
       instagram: "إنستغرام",
       whatsapp: "واتساب",
+      facebook: "Facebook",
     },
     footer: {
       tagline: "الأناقة في كل نفحة.",

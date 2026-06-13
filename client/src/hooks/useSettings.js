@@ -7,7 +7,8 @@ function isSettings(value) {
   return (
     typeof value?.brandName === "string" &&
     typeof value?.whatsapp === "string" &&
-    typeof value?.instagram === "string"
+    typeof value?.instagram === "string" &&
+    typeof value?.facebook === "string"
   );
 }
 

@@ -1,7 +1,7 @@
-import { ArrowIcon, WhatsAppIcon } from "./Icons";
+import { ArrowIcon, FacebookIcon, WhatsAppIcon } from "./Icons";
 import { openGeneralWhatsApp } from "../utils/whatsapp";
 
-export default function Contact({ t }) {
+export default function Contact({ t, settings }) {
   return (
     <section className="section contact" id="contact">
       <div className="container contact-card" data-reveal>
@@ -23,10 +23,20 @@ export default function Contact({ t }) {
             <strong>@ba3mrani_parfum</strong>
             <ArrowIcon />
           </a>
-          <a className="contact-link" href="tel:+212605953279">
+          <a className="contact-link" href="tel:+212680975966">
             <span>{t.contact.whatsapp}</span>
-            <strong>+212 605 953 279</strong>
+            <strong>+212 680-975966</strong>
             <ArrowIcon />
+          </a>
+          <a
+            className="contact-link"
+            href={settings.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>{t.contact.facebook}</span>
+            <strong>Baamrani Parfum</strong>
+            <FacebookIcon />
           </a>
         </div>
       </div>

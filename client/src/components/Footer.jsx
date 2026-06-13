@@ -1,4 +1,4 @@
-export default function Footer({ t }) {
+export default function Footer({ t, settings }) {
   return (
     <footer className="footer">
       <div className="footer-arc" />
@@ -15,6 +15,13 @@ export default function Footer({ t }) {
           <a href="#catalogue">{t.footer.collection}</a>
           <a href="#commander">{t.nav.order}</a>
           <a href="#contact">{t.nav.contact}</a>
+          <a
+            href={settings.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
         </nav>
         <p className="copyright">
           © {new Date().getFullYear()} Baamrani Parfum. {t.footer.rights}

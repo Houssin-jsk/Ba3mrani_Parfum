@@ -1,4 +1,4 @@
-export const WHATSAPP_NUMBER = "212605953279";
+export const WHATSAPP_NUMBER = "212680975966";
 let whatsappNumber = WHATSAPP_NUMBER;
 
 export function configureWhatsAppNumber(value) {
