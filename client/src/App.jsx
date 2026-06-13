@@ -10,12 +10,15 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import useProducts from "./hooks/useProducts";
+import useSettings from "./hooks/useSettings";
 import useScrollReveal from "./hooks/useScrollReveal";
 import translations from "./data/translations";
+import { configureWhatsAppNumber } from "./utils/whatsapp";
 
 export default function App() {
   const [language, setLanguage] = useState("fr");
   const { products, source } = useProducts();
+  const settings = useSettings();
   useScrollReveal();
   const t = translations[language];
 
@@ -23,6 +26,10 @@ export default function App() {
     document.documentElement.lang = language;
     document.documentElement.dir = language === "ar" ? "rtl" : "ltr";
   }, [language]);
+
+  useEffect(() => {
+    configureWhatsAppNumber(settings.whatsapp);
+  }, [settings.whatsapp]);
 
   return (
     <div className={`app app-${language}`}>
