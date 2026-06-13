@@ -9,7 +9,93 @@ export function MenuIcon({ open = false }) {
 }
 
 export function ArrowIcon() {
-  return <span aria-hidden="true">↗</span>;
+  return <ExternalLinkIcon />;
+}
+
+export function ExternalLinkIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M14 5h5v5M19 5l-9 9M19 14v5H5V5h5"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.7"
+      />
+    </svg>
+  );
+}
+
+export function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect
+        x="3.5"
+        y="3.5"
+        width="17"
+        height="17"
+        rx="5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.7"
+      />
+      <circle
+        cx="12"
+        cy="12"
+        r="4"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.7"
+      />
+      <circle cx="17.4" cy="6.8" r="1.1" fill="currentColor" />
+    </svg>
+  );
+}
+
+export function PhoneIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M7.2 3.8 10 7.3 8.3 9.6c1.2 2.5 3.5 4.8 6.1 6.1l2.3-1.7 3.5 2.8c.3.3.4.7.2 1.1-.7 1.5-2.2 2.5-3.9 2.4C9.7 19.7 4.3 14.3 3.7 7.5c-.1-1.7.9-3.2 2.4-3.9.4-.2.8-.1 1.1.2Z"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.7"
+      />
+    </svg>
+  );
+}
+
+export function ChevronLeftIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="m15 18-6-6 6-6"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.8"
+      />
+    </svg>
+  );
+}
+
+export function ChevronRightIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="m9 18 6-6-6-6"
+        fill="none"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.8"
+      />
+    </svg>
+  );
 }
 
 export function FacebookIcon() {

@@ -1,3 +1,5 @@
+import { ArrowIcon } from "./Icons";
+
 export default function ProductShowcase({ t }) {
   return (
     <section className="section showcase">
@@ -14,7 +16,7 @@ export default function ProductShowcase({ t }) {
           <h2>{t.showcase.title}</h2>
           <p>{t.showcase.text}</p>
           <a className="text-link" href="#catalogue">
-            {t.showcase.link} <span aria-hidden="true">→</span>
+            {t.showcase.link} <ArrowIcon />
           </a>
         </div>
       </div>

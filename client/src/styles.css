@@ -1145,7 +1145,7 @@ svg {
   border-color: var(--gold);
 }
 
-.contact-link span {
+.contact-link-label {
   color: var(--muted);
   font-size: 0.68rem;
   text-transform: uppercase;
@@ -1153,6 +1153,18 @@ svg {
 
 .contact-link strong {
   font-size: 0.78rem;
+}
+
+.contact-link-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--gold-light);
+}
+
+.contact-link-icons svg {
+  width: 19px;
+  height: 19px;
 }
 
 .footer {
@@ -2160,7 +2172,7 @@ svg {
     padding-bottom: 10px;
   }
 
-  .contact-link > span:last-child {
+  .contact-link-icons {
     grid-column: 2;
     grid-row: 1 / span 2;
   }

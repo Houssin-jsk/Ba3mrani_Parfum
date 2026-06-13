@@ -1,5 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowIcon, WhatsAppIcon } from "./Icons";
+import {
+  ArrowIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  WhatsAppIcon,
+} from "./Icons";
 import { orderPerfume } from "../utils/whatsapp";
 
 const allowedGeneratedGalleryFiles = new Set([
@@ -156,7 +161,7 @@ export default function ProductDetailModal({
                     onClick={() => moveGallery(-1)}
                     aria-label={t.modal.previousImage}
                   >
-                    <span aria-hidden="true">←</span>
+                    <ChevronLeftIcon />
                   </button>
                   <button
                     className="gallery-arrow gallery-arrow-next"
@@ -164,7 +169,7 @@ export default function ProductDetailModal({
                     onClick={() => moveGallery(1)}
                     aria-label={t.modal.nextImage}
                   >
-                    <span aria-hidden="true">→</span>
+                    <ChevronRightIcon />
                   </button>
                   <span className="gallery-counter">
                     {selectedImage + 1} / {availableImages.length}
